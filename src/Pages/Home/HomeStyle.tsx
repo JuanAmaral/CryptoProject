@@ -56,4 +56,42 @@ export const ButtonLogin = styled.button`
   border: none;
   color: white;
   font-size: 2rem;
+  cursor: pointer;
+`;
+
+export const Divisor = styled.div`
+  margin: 2rem;
+  min-width: 20.5rem;
+  border: 1px solid rgba(252, 221, 236, 0.2);
+`;
+
+export const ButtonMetaMask = styled(ButtonLogin)`
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  box-shadow: 0px;
+`;
+
+export const ButtonInsideMetaMask = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #291d32;
+  min-height: 2.5rem;
+  min-width: 20rem;
+  border-radius: 4px;
+  border: none;
+
+  h1 {
+    margin: 0;
+    font-size: 1rem;
+    background: -webkit-linear-gradient(135deg, #9a4dff 0%, #f600dd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  img {
+    margin-left: 1rem;
+  }
 `;

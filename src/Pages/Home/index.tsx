@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
+import fox from '../../img/fox.png';
 import * as style from './HomeStyle';
 
 export default function Home() {
@@ -12,12 +13,24 @@ export default function Home() {
       />
       <style.Tittle>Crypto</style.Tittle>
       <style.SubTittle>O seu marktplace de NFTs no Brasil</style.SubTittle>
-      <style.Input defaultValue={'Login'} />
-      <style.InputBottom defaultValue={'Senha'} />
+      <style.Input placeholder={'login'} />
+      <style.Input placeholder={'senha'} />
       <style.ContainerForgot>
         <style.TextForgot>Esqueceu sua senha?</style.TextForgot>
       </style.ContainerForgot>
-      <style.ButtonLogin>Entrar</style.ButtonLogin>
+
+      <Link to="/feed">
+        <style.ButtonLogin>Entrar</style.ButtonLogin>
+      </Link>
+
+      <style.Divisor></style.Divisor>
+
+      <style.ButtonMetaMask>
+        <style.ButtonInsideMetaMask>
+          <h1>Entrar com MetaMask</h1>
+          <img src={fox} width="30px" height="30px"></img>
+        </style.ButtonInsideMetaMask>
+      </style.ButtonMetaMask>
     </style.Container>
   );
 }
